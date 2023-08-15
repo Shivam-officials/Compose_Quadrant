@@ -17,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -47,15 +48,15 @@ fun ComposeQuadrantApp(modifier: Modifier = Modifier) {
             modifier = Modifier.weight(1f)
         ) {
             ComposeInfoCard(
-                title = "Text composable",
-                desc = "Displays text and follows the recommended Material Design guidelines.",
+                title = stringResource(R.string.text_composable),
+                desc = stringResource(R.string.texta_composable_description),
                 backgroundColor = Color(0xFFEADDFF),
                 modifier = Modifier.weight(1f)  //todo this one modifier is getting passed down into the card
             )
 
             ComposeInfoCard(
-                title = "Image composable",
-                desc = "Creates a composable that lays out and draws a given Painter class object",
+                title = stringResource(R.string.image_composable),
+                desc = stringResource(R.string.image_composable_description),
                 backgroundColor = Color(0xFFD0BCFF),
                 modifier = Modifier.weight(1f)
             )
@@ -65,15 +66,15 @@ fun ComposeQuadrantApp(modifier: Modifier = Modifier) {
             modifier = Modifier.weight(1f)
         ) {
             ComposeInfoCard(
-                title = "Row composable",
-                desc = "A layout composable that places its children in a horizontal sequence.",
+                title = stringResource(R.string.row_composable),
+                desc = stringResource(R.string.row_composable_description),
                 backgroundColor = Color(0xFFB69DF8),
                 modifier = Modifier.weight(1f)
             )
 
             ComposeInfoCard(
-                title = "Column composable ",
-                desc = "A layout composable that places its children in a vertical sequence. ",
+                title = stringResource(R.string.column_composable),
+                desc = stringResource(R.string.column_composable_description),
                 backgroundColor = Color(0xFFF6EDFF),
                 modifier = Modifier.weight(1f)
             )
